@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.paddingBro {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.radiusBro{
+    border-radius: 40px;
+}
+
+.headerImg{
+    background-image: url("https://wallpapercave.com/wp/wp11805135.jpg");
+    background-position: center;
+}

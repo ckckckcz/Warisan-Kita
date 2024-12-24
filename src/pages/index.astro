@@ -2,20 +2,22 @@
 import Layout from '../layouts/default.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import AboutUs from '../components/Home/AboutUs.astro';
 import "../assets/css/globals.css";
 import "../assets/css/font.css";
 ---
 
 <Layout>
 	<Navbar />
-		<section class="px-4 radiusBro mx-auto max-w-screen-xl text-left py-24 lg:py-56 mt-5">
-			<h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We invest in the world’s potential</h1>
-				<p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-				<div class="flex flex-col space-y-4 sm:flex-row sm:justify-left sm:space-y-0">
-					<a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-xl bg-white hover:bg-gray-200 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-						Join Community
-					</a> 
-				</div>
+		<section class="px-4 radiusBro mx-auto max-w-screen-xl justify-center items-center text-left lg:py-64 py-20 min-h-screen">
+			<h1 class="mb-2 text-5xl lg:text-7xl md:text-6xl font-bold tracking-tight leading-none text-white">Caring for Heritage, Building the Future</h1>
+			<p class="mb-10 text-sm font-normal text-gray-300 lg:text-2xl">Caring for Heritage, Building the Future Through the preservation of our natural and cultural heritage, we are dedicated to fostering a future that honors our roots while embracing sustainable development. By safeguarding our environment and traditions, we seek to create a world that balances progress.</p>
+			<div class="flex flex-col space-y-4 sm:flex-row sm:justify-left sm:space-y-0">
+				<a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-xl bg-white hover:bg-gray-200 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+					Join Community
+				</a> 
+			</div>
 		</section>
+		<AboutUs />
 	<Footer />
 </Layout>

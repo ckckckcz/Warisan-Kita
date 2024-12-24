@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/default.astro"
+import { Image } from "astro:assets";
+import Background from "../../assets/img/AdatBali.png";
+---
+
+<Layout>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl grid grid-cols-1 lg:grid lg:grid-cols-2 gap-5 lg:gap-20 text-left lg:py-16">
+            <div class="justText">
+                <h1 class="mb-5 text-5xl lg:text-6xl md:text-6xl font-bold tracking-tight leading-none text-gray-900">About Warisan Kita</h1>
+			    <p class="text-md font-normal text-gray-400 lg:text-xl">We believe that by combining modern technology and rich tradition, Warisan Kita can make a real contribution to cultural preservation for future generations. We are committed to preserving and introducing Indonesia's cultural heritage to the world, building a sustainable future filled with respect for our cultural roots. <br><br> By using AI, we are able to maintain the integrity and sustainability of traditional artworks, facilitate access for the wider community, and support a deeper understanding of Indonesia's rich culture.</p>
+            </div>
+            <div>
+                <Image src={Background} alt="Background image" class="w-full h-auto rounded-3xl" />
+            </div>
+        </div>
+    </section>
+</Layout>

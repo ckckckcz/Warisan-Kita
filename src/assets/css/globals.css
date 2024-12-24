@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-color: #114232;
+}
+
+.headerImg {
+    border-radius: 40px;
+    background-image: url('https://i.ibb.co/Dp8kgvD/Background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1280px;
+    background-blend-mode: multiply;
+    background-color: #374151;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .headerImg{
+        background-image: none;
+        text-align: left;
+        background-color: transparent;
+    }
+}

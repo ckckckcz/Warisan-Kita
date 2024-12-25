@@ -1,18 +1,24 @@
+---
+import { Image } from "astro:assets";
+import tarianAdat from "../../../../assets/img/Galeri/tarianAdat.png";
+import wisataAlam from "../../../../assets/img/Galeri/wisataAlam.png";
+import upacaraAdat from "../../../../assets/img/Galeri/upacaraAdat.png";
+---
 <div class="relative group">
-    <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+    <Image class="h-96 max-w-full rounded-3xl object-cover" src={tarianAdat} alt="tarianAdat" />
     <div class="absolute inset-0 bg-blend-multiply bg-green-800 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out rounded-3xl opacity-0 group-hover:opacity-100">
-        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Text Here</p>
+        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Tarian Adat</p>
     </div>
 </div>
 <div class="relative group">
-    <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+    <Image class="h-72 object-cover max-w-full rounded-3xl" src={wisataAlam} alt="wisataAlam" />
     <div class="absolute inset-0 bg-blend-multiply bg-green-800 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out rounded-3xl opacity-0 group-hover:opacity-100">
-        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Text Here</p>
+        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Wisata Alam</p>
     </div>
 </div>
 <div class="relative group">
-    <img class="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+    <Image class="h-72 object-cover max-w-full rounded-3xl" src={upacaraAdat} alt="upacaraAdat" />
     <div class="absolute inset-0 bg-blend-multiply bg-green-800 group-hover:bg-opacity-70 transition-opacity duration-300 ease-in-out rounded-3xl opacity-0 group-hover:opacity-100">
-        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Text Here</p>
+        <p class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-3 left-3">Upacara Adat</p>
     </div>
 </div>

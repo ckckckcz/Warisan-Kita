@@ -6,9 +6,10 @@ import AboutUs from '../components/Home/AboutUs.astro';
 import Galeri from '../components/Home/Galeri.astro';
 import "../assets/css/globals.css";
 import "../assets/css/font.css";
+const Title = "Home Page - Warisan Kita";
 ---
 
-<Layout>
+<Layout title={Title}>
 	<Navbar />
 		<section class="px-4 radiusBro mx-auto max-w-screen-xl justify-center items-center text-left lg:py-64 py-20 min-h-screen">
 			<h1 class="mb-2 text-5xl lg:text-7xl md:text-6xl font-bold tracking-tight leading-none text-white">Caring for Heritage, Building the Future</h1>

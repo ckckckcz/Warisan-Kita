@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const isHomePage = window.location.pathname === '/';
     const isBlogPage = window.location.pathname === '/blog';
     const isTarianAdatPage = window.location.pathname === '/blog/tarian-adat';
+    const isBelajarPage = window.location.pathname === '/belajar';
 
     const navLinks = document.querySelectorAll('#mega-menu-icons a') as NodeListOf<HTMLAnchorElement>;
     const warisanKitaTitle = document.getElementById('warisanKitaTitle') as HTMLSpanElement;
 
     navLinks.forEach((link) => {
-        if (isBlogPage || isTarianAdatPage) {
+        if (isBlogPage || isTarianAdatPage || isBelajarPage) {
             link.classList.remove('text-white');
             link.classList.add('text-gray-900');
             link.classList.remove('hover:text-gray-900');

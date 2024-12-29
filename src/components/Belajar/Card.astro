@@ -1,0 +1,26 @@
+---
+import type { belajarData } from '../../model/belajarData';
+import { card } from "../../data/belajar";
+---
+
+<div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5">
+    {card.map((card: belajarData) => (
+      <div class="w-full bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href={card.link} target="_blank">
+          <img class="rounded-t-2xl w-full h-48 object-cover" src={card.image} alt={card.alt} />
+        </a>
+        <div class="p-5">
+          <a href="javascript:void(0)">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{card.title}</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{card.description}</p>
+          <a
+            href={card.link}
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Belajar Sekarang
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>

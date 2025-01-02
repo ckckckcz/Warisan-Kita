@@ -1,12 +1,22 @@
 ---
-import Layout from '../layouts/default.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-// import "../assets/css/globals.css";
-import "../assets/css/font.css";
+import Layout from "../layouts/default.astro"
+import "../assets/css/font.css"
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+import Carousel from "../components/UI/Belajar/Carousel.astro"
+import BelajarCard from "../components/Belajar/Card.astro"
 ---
 
 <Layout>
     <Navbar />
+    <section class="bg-white dark:bg-gray-900">
+        <div class="px-4 mx-auto max-w-screen-xl text-left lg:py-16">
+            <h1 class="mb-5 mt-10 text-4xl lg:text-5xl md:text-4xl font-bold tracking-tight leading-none text-gray-900">Menyatukan Tradisi dan Inovasi untuk Masa Depan yang Lebih Baik</h1>
+			<p class="mb-10 text-sm font-normal text-gray-400 lg:text-xl">Melalui kolaborasi antara tradisi yang kaya dan inovasi yang berkelanjutan, kita membangun masa depan yang menghormati akar budaya, sekaligus membuka jalan bagi generasi mendatang untuk hidup dengan harmoni dan kemajuan.</p>
+            <Carousel />
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+            <BelajarCard />       
+        </div>
+    </section>
     <Footer />
 </Layout>
